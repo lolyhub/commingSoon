@@ -1,0 +1,186 @@
+/****************** Start: Bootstrap Reset *********************/
+/*********** buttons *************/
+.btn, .input-group-addon{
+    border-radius: 0;
+}
+.btn-warning, .btn-warning:link, .btn-warning:hover, .btn-warning:active, .btn-warning:focus
+{
+    background-color: #faae1d;
+    border-color: #faae1d;
+}
+.btn-primary, .btn-primary:link, .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color: #1a7cc0;
+    border-color: #1a7cc0;
+}
+.btn-danger, .btn-danger:link, .btn-danger:hover, .btn-danger:active, .btn-danger:focus{
+    background-color: #eb1f38;
+    border-color: #eb1f38;
+}
+.btn-success, .btn-success:link, .btn-success:hover, .btn-success:active, .btn-success:focus{
+    background-color: #88c440;
+    border-color: #88c440;
+}
+
+/****** modal ******/
+.modal-header, .modal-footer{
+    border-top: none;
+    border-bottom: none;
+}
+.modal-content{
+    border-radius: 0;
+}
+.close-modal{
+    color: #ddd;
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    font-size: 18px;
+    transition: color .3s ease-in-out;
+}
+.close-modal:hover, .close-modal:active{
+    color: #bd0018;
+    cursor: pointer;
+}
+
+/********** popover ***********/
+.popover {
+    border-radius: 0;
+    border:none;
+}
+.popover hr {
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+/********** form elements *******/
+input[type='text'], select, input[type='password']{
+    height: 43px;
+    padding: 12px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    box-shadow: none;
+}
+textarea{
+    resize: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.form-control:focus, .form-control:active{
+    box-shadow: none;
+}
+
+/****************** End: Bootstrap Reset *********************/
+
+
+/***** no border radius *****/
+.no-border-radius{
+    border-radius: 0;
+}
+
+/***** no border radius *****/
+.no-border-right{
+    border-right: none;
+}
+
+/***** line below title *****/
+.has-line{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/***** colourful line *****/
+.colourful-line{
+    background: url(../images/footerLine.png);
+    height: 5px;
+    width: 100%;
+    background-size: 100%;
+    margin-top: 12px;
+    background-repeat: no-repeat;
+}
+.line{
+    height:3px;
+    margin-bottom:20px;
+    clear: both;
+}
+.line .line-color{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.line .line-color1{
+     background: #3578b6;
+}
+.line .line-color2{
+     background: #fdad1e;
+}
+.line .line-color3{
+      background: #72b029;
+}
+.line .line-color4{
+     background: #ed1b36;
+}
+
+/***** theme colors *****/
+.orange-color{
+    color: #fdad1e;
+}
+.orange-background{
+    background: #fdad1e;
+}
+.blue-color{
+    color: #3578b6;
+}
+.blue-background{
+    background: #3578b6;
+}
+.green-color{
+    color: #72b029;
+}
+.green-background{
+    background: #72b029;
+}
+.red-color{
+    color: #ed1b36;
+}
+.red-background{
+    background: #ed1b36;
+}
+
+/***** no padding *****/
+.no-padding{
+    padding:0;
+}
+
+/***** cart icons *****/
+.extra-icons{
+    color: #747474;
+    float: right;
+    font-size: 13px;
+}
+.extra-icons span{
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/******* headrs ********/
+h2, h3, h4{
+   font-weight: 600; 
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 21px;
+}
+h4{
+    font-size: 18px;
+}
+
+
+/****** add program button ******/
+.loly-button{
+    padding-top:4px; 
+    padding-bottom: 4px;
+    width: 165.83px;
+}
+

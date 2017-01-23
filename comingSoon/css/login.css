@@ -1,0 +1,266 @@
+body{
+    background: #ededed;
+    font-family: 'open sans', sans-serif;
+}
+body header{
+    text-align: center;
+}
+.logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+}
+.nav-tabs{
+    background: #fff;
+}
+.nav-tabs>li>a{
+    background: #cacaca;
+    margin-right:0;
+    border-radius: 0;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    color: #555;
+}
+.nav-tabs>li.signup{
+    width: 60%;
+}
+.nav-tabs>li.login{
+    width: 40%;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border-color: transparent;
+    border-bottom: none;
+}
+.tab-content{
+    background: #fff;
+    padding-top:40px;
+}
+.loly-form input[type='text'], .loly-form input[type='email'], .loly-form input[type='password'], .loly-form select, .loly-form input[type='tel'], .loly-form .checkbox
+{
+    width: 100%;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.loly-form input[type='text'].error, .loly-form input[type='email'].error, .loly-form input[type='password'].error, .loly-form select.error, .loly-form input[type='tel'].error, .loly-form .checkbox {
+    border-color: #ed1b36;
+}
+.loly-form .checkbox {
+border:none;
+}
+input[type="checkbox"] {
+    display:block;
+    float:left;
+    margin-right: 5px;
+}
+
+.loly-form select {
+    padding-top: 10px;
+}
+.loly-form .checkbox a{
+    float:right;
+}
+.loly-form .form-group, .loly-form .input-group, .form-inline .form-control{
+    width: 100%;
+}
+.input-group-addon{
+    border-radius: 0;
+}
+.form-control{
+    height: 43px;
+    padding: 12px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    box-shadow: none;
+}
+.form-control:focus, .form-control:active{
+    box-shadow: none;
+}
+form .col-sm-6, form .col-sm-12, form .col-xs-12, form .col-xs-10{
+    margin-bottom:30px;
+}
+
+.date {
+    position:relative;
+}
+.date #dob-error{
+    overflow: hidden;
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    height: 30px;
+    left: 0px;
+    top: 43px;
+}
+
+#selectTerms-error {
+    position: absolute;
+    top: 20px;
+}
+
+
+.country-select{
+    width: 100%;
+}
+
+
+.form-inline .input-group .input-group-addon{
+    width: 60px;
+}
+
+
+
+.intl-tel-input {width: 100%;}
+
+
+
+/***** Social Icons *****/
+.social .col-xs-4{
+    
+}
+.social a{
+    width: 100%;
+    display:inline-block;
+    background:#ddd;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    color: #fff;
+}
+.social a.facebook {
+    background: #405d9b;    
+}
+.social a.twitter{
+    background: #1da1f2;
+}
+.social a.g-plus{
+    background: #db4437;
+}
+
+/********** passowrd strenth checker **********/
+#result.short{
+	color:#fff;
+}
+#result.weak{
+	color: #fff;
+}
+#result.good{
+	color:#fff;
+}
+#result.strong{
+	color: #fff;
+}
+
+
+
+
+.error{
+    font-weight: 500;
+    color: #eb1f38;
+    border-color:#ed1b36;
+}
+#username_exist, #username_available , #email_exist, #mobile_exist{
+    font-weight:500;
+}
+.progress {
+    background: ;
+    margin-bottom:0;
+    border-radius:0;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -o-box-shadow:none;
+}
+
+
+
+
+label.error {
+    position:absolute;
+    left:15px;
+    top:44px;
+    font-size: 13px;
+}
+#mobile-error {
+    left: 0;
+}
+
+
+select #dobday.error ,select #dobmonth.error, select #dobyear.error{
+    color:#ff0000;
+}
+
+/******* Profile Settings *******/
+.settings .tab-content{
+    padding-top:20px;
+}
+.settings .nav-tabs li{
+    width: 100%;
+}
+.settings hr {
+    margin-top:0;
+}
+.settings .change-password-link, .settings .deactivate-link{
+    text-decoration: underline;
+}
+.settings .deactivate-link{
+    float:right;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 556px;
+        margin-top: 10%;
+    }
+}
+.modal-header{
+    text-align: center;
+}
+.modal-body {
+    font-size: 15px;
+    line-height: 22px;
+}
+.modal-footer {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media screen and (max-width: 500px) {
+    .modal textarea {
+        width: 263px;
+    }
+}
+#confirmModal {
+    margin-top: 6%;
+}
+
+.dateofbirth .error {
+    border-color: #FF0000;
+}
+#deactivateModal ul li{
+    margin-bottom:6px;
+}
+
+
+
+
+/******************** Start: Password Strength Checker **********************/
+.popover-title {
+    text-align:center;
+}
+
+
+
+
+
+/********************* login validation ***********************/
+.login_error {
+    color: #ed1b36;
+    display:none;
+    margin-top: -25px;
+    position: absolute;
+    left: 37%;
+    color: #ff0000;
+}

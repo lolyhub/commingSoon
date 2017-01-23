@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48A75049-CFD0-433A-9374-12B45384BFB0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>comingSoon</RootNamespace>
+    <AssemblyName>comingSoon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\fonts\BebasNeue-webfont.eot" />
+    <Content Include="css\fonts\BebasNeue-webfont.ttf" />
+    <Content Include="css\fonts\BebasNeue-webfont.woff" />
+    <Content Include="css\fonts\slick.eot" />
+    <Content Include="css\fonts\slick.ttf" />
+    <Content Include="css\fonts\slick.woff" />
+    <Content Include="css\style.less" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="fonts\font-awesome\less\animated.less" />
+    <Content Include="fonts\font-awesome\less\bordered-pulled.less" />
+    <Content Include="fonts\font-awesome\less\core.less" />
+    <Content Include="fonts\font-awesome\less\fixed-width.less" />
+    <Content Include="fonts\font-awesome\less\font-awesome.less" />
+    <Content Include="fonts\font-awesome\less\icons.less" />
+    <Content Include="fonts\font-awesome\less\larger.less" />
+    <Content Include="fonts\font-awesome\less\list.less" />
+    <Content Include="fonts\font-awesome\less\mixins.less" />
+    <Content Include="fonts\font-awesome\less\path.less" />
+    <Content Include="fonts\font-awesome\less\rotated-flipped.less" />
+    <Content Include="fonts\font-awesome\less\screen-reader.less" />
+    <Content Include="fonts\font-awesome\less\stacked.less" />
+    <Content Include="fonts\font-awesome\less\variables.less" />
+    <Content Include="fonts\font-awesome\scss\font-awesome.scss" />
+    <Content Include="fonts\font-awesome\scss\_animated.scss" />
+    <Content Include="fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="fonts\font-awesome\scss\_core.scss" />
+    <Content Include="fonts\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="fonts\font-awesome\scss\_icons.scss" />
+    <Content Include="fonts\font-awesome\scss\_larger.scss" />
+    <Content Include="fonts\font-awesome\scss\_list.scss" />
+    <Content Include="fonts\font-awesome\scss\_mixins.scss" />
+    <Content Include="fonts\font-awesome\scss\_path.scss" />
+    <Content Include="fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="fonts\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="fonts\font-awesome\scss\_stacked.scss" />
+    <Content Include="fonts\font-awesome\scss\_variables.scss" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="images\FootersIcon\.DS_Store" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Slider\css\fonts\BebasNeue-webfont.eot" />
+    <Content Include="Slider\css\fonts\BebasNeue-webfont.ttf" />
+    <Content Include="Slider\css\fonts\BebasNeue-webfont.woff" />
+    <Content Include="Slider\images\_Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B97145793435B118AE517C7F167B3BB7.txt" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="css\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="css\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="css\bootstrap-datetimepicker.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\countrySelect.min.css" />
+    <Content Include="css\flags.css" />
+    <Content Include="css\flags.png" />
+    <Content Include="css\fonts\BebasNeue-webfont.svg" />
+    <Content Include="css\fonts\Dharma Type Font License.txt" />
+    <Content Include="css\fonts\LICENSE.txt" />
+    <Content Include="css\fonts\slick.svg" />
+    <Content Include="css\framework.css" />
+    <Content Include="css\jquery-ui.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\media.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\social.css" />
+    <Content Include="css\style-old.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DD62FDAC1E746C28EF0B2D5D8CC64FC2.txt" />
+    <Content Include="fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\accessories1.png" />
+    <Content Include="images\alfursan-logo.png" />
+    <Content Include="images\alfursan-program.jpg" />
+    <Content Include="images\alfursan-slide.jpg" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\barcode.PNG" />
+    <Content Include="images\best-product-2.png" />
+    <Content Include="images\best-product.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\bodymasters.jpg" />
+    <Content Include="images\coupen2.png" />
+    <Content Include="images\co\co-1.png" />
+    <Content Include="images\co\co-2.png" />
+    <Content Include="images\co\co-3.png" />
+    <Content Include="images\co\co-4.png" />
+    <Content Include="images\co\co-5.png" />
+    <Content Include="images\creditcards.png" />
+    <Content Include="images\deals-bg.jpg" />
+    <Content Include="images\deals-thumb.png" />
+    <Content Include="images\download.gif" />
+    <Content Include="images\dropdowen.png" />
+    <Content Include="images\facebook-twitter-youtube-logo-png-images-6.png" />
+    <Content Include="images\footer-block-2.png" />
+    <Content Include="images\footer-block-3.png" />
+    <Content Include="images\footer-block.png" />
+    <Content Include="images\FooterKetaf.png" />
+    <Content Include="images\footerLine.png" />
+    <Content Include="images\FooterMobily.png" />
+    <Content Include="images\FootersIcon\address.png" />
+    <Content Include="images\FootersIcon\contactUs.png" />
+    <Content Include="images\FootersIcon\email.png" />
+    <Content Include="images\FootersIcon\facebookIcon.png" />
+    <Content Include="images\FootersIcon\Footer1-02.png" />
+    <Content Include="images\FootersIcon\Footer1-06.png" />
+    <Content Include="images\FootersIcon\Footer1-07.png" />
+    <Content Include="images\FootersIcon\Footer1-13.png" />
+    <Content Include="images\FootersIcon\Footer1-14.png" />
+    <Content Include="images\FootersIcon\Footer1-16.png" />
+    <Content Include="images\FootersIcon\Footer1-17.png" />
+    <Content Include="images\FootersIcon\gmailIcon.png" />
+    <Content Include="images\FootersIcon\linkIcon.png" />
+    <Content Include="images\FootersIcon\twitterIcon.png" />
+    <Content Include="images\FootersIcon\youtubeIcon.png" />
+    <Content Include="images\ImageAttribution.txt" />
+    <Content Include="images\img1.png" />
+    <Content Include="images\line.png" />
+    <Content Include="images\loding.gif" />
+    <Content Include="images\login-red.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\logo-alfursan.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo4.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\lolyhub-LOGO.png" />
+    <Content Include="images\lolyhub-LOGO1.png" />
+    <Content Include="images\lpicon-gray.png" />
+    <Content Include="images\lpicon.png" />
+    <Content Include="images\lpiconlrg.png" />
+    <Content Include="images\manoosha1.gif" />
+    <Content Include="images\manoosha2.jpg" />
+    <Content Include="images\manoosha3.jpg" />
+    <Content Include="images\new-use-red.png" />
+    <Content Include="images\new-use.png" />
+    <Content Include="images\overview-alfursan.jpg" />
+    <Content Include="images\partner1.png" />
+    <Content Include="images\partner2.png" />
+    <Content Include="images\partner3 %28copy%29.png" />
+    <Content Include="images\partner3.png" />
+    <Content Include="images\partner4.png" />
+    <Content Include="images\partner5.png" />
+    <Content Include="images\product1.jpg" />
+    <Content Include="images\product2.jpg" />
+    <Content Include="images\programs\qitaf-big.png" />
+    <Content Include="images\programs\qitaf-small.jpg" />
+    <Content Include="images\qitaf-program.jpg" />
+    <Content Include="images\qitaf.jpg" />
+    <Content Include="images\saudi-flag.png" />
+    <Content Include="images\sdsdf.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="images\select-redeem-icon.png" />
+    <Content Include="images\slider-005.jpg" />
+    <Content Include="images\slider-1.jpg" />
+    <Content Include="images\slider\slider-002-02.jpg" />
+    <Content Include="images\slider\slider-4-1.jpg" />
+    <Content Include="images\sm-pro-1.jpg" />
+    <Content Include="images\sm-pro-2.jpg" />
+    <Content Include="images\sm-pro-3.jpg" />
+    <Content Include="images\sm-pro-4.jpg" />
+    <Content Include="images\social\facebook.png" />
+    <Content Include="images\social\google-plus.png" />
+    <Content Include="images\social\linkedin.png" />
+    <Content Include="images\social\twitter.png" />
+    <Content Include="images\str.png" />
+    <Content Include="images\tablet.png" />
+    <Content Include="images\tblImg.png" />
+    <Content Include="images\tblImg2.png" />
+    <Content Include="images\title-bdr.jpg" />
+    <Content Include="images\tour.png" />
+    <Content Include="images\Untitle34e3d-1.jpg" />
+    <Content Include="images\Untitled-1.jpg" />
+    <Content Include="images\Untitled-1123.jpg" />
+    <Content Include="images\Untitled-23231.jpg" />
+    <Content Include="images\Untitledfsdfsdf2-1.jpg" />
+    <Content Include="images\visa.png" />
+    <Content Include="images\vouchers\160630094148448.jpg" />
+    <Content Include="images\vouchers\bodymasters.jpg" />
+    <Content Include="images\vouchers\icflixlogo.png" />
+    <Content Include="images\vouchers\narcissus-hotel-and-residence-0.jpg" />
+    <Content Include="images\vouchers\petromin copy.png" />
+    <Content Include="images\vouchers\sdsdf.jpg" />
+    <Content Include="images\vouchers\unnamed-2.jpg" />
+    <Content Include="images\vouchers\Untitle34e3d-1.jpg" />
+    <Content Include="images\vouchers\Untitled-1.jpg" />
+    <Content Include="images\vouchers\Untitled-23231.jpg" />
+    <Content Include="images\vouchers\Untitledfsdfsdf2-1.jpg" />
+    <Content Include="images\vouchers\Vector Smart Object.png" />
+    <Content Include="images\vouchers\Vector Smart Object1.jpg" />
+    <Content Include="images\vouchers\Vector Smart Object1.png" />
+    <Content Include="images\vouchers\Vector Smart Object3.png" />
+    <Content Include="images\vouchers\Vector Smart Object4.png" />
+    <Content Include="images\vouchers\Vector Smart Object5.png" />
+    <Content Include="images\vouchers\Vector Smart Object6.png" />
+    <Content Include="images\vouchers\Vector Smart Object7.png" />
+    <Content Include="images\vouchers\Vector Smart Object8.png" />
+    <Content Include="images\vouchers\voucher1.png" />
+    <Content Include="images\vouchers\wewsds.jpg" />
+    <Content Include="images\watch-2.png" />
+    <Content Include="images\watch.png" />
+    <Content Include="images\waves.gif" />
+    <Content Include="images\waves.jpg" />
+    <Content Include="images\wewsds.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap-datetimepicker.min.css" />
+    <Content Include="js\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="js\sticky-kit.min.js" />
+    <Content Include="Slider\css\demo.css" />
+    <Content Include="Slider\css\fonts\BebasNeue-webfont.svg" />
+    <Content Include="Slider\css\fonts\Dharma Type Font License.txt" />
+    <Content Include="Slider\css\nojs.css" />
+    <Content Include="Slider\css\style.css" />
+    <Content Include="Slider\css\style2.css" />
+    <Content Include="Slider\images\1.png" />
+    <Content Include="Slider\images\2.png" />
+    <Content Include="Slider\images\3.png" />
+    <Content Include="Slider\images\4.png" />
+    <Content Include="Slider\images\arrows.png" />
+    <Content Include="Slider\images\bg.png" />
+    <Content Include="Slider\images\ImageAttribution.txt" />
+    <Content Include="Slider\images\waves.gif" />
+    <Content Include="Slider\js\jquery-1.7.1.min.js" />
+    <Content Include="Slider\js\jquery.cslider.js" />
+    <Content Include="Slider\js\modernizr.custom.28468.js" />
+    <Content Include="VIDEOS\2b1bc75c-7636-4321-941e-f97fb718ae5f.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62789</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62789/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
